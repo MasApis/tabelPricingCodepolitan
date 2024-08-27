@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+body {
+    background-color: #399918;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px 0px 10px 0px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 0px 15px;
+    width: 100%;
+    max-width: 87%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pricing-plan {
+    border-bottom: 1px  solid lightgreen;
+    margin: 0px 5px;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-feature {
+    margin: 30px 0px 0px 0px;
+}
+
+.pricing-feature-item {
+    font-weight: 600;
+    font-size: 1em;
+    color: #399918;
+    letter-spacing: 1px;
+    padding: 5%;
+    border-top: 1px  solid lightgreen;
+}
+
+.pricing-feature-item:last-child {
+    border-bottom: 1px  solid lightgreen;
+}
+
+.pricing-price {
+    display: block;
+    color: green;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.pricing-button {
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    margin: 20px 0px;
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pricing-button:hover {
+    background-color: #399918;
+}
+
+.pricing-button-free {
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    margin: 20px 0px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pricing-button-free:hover {
+    background-color: rgb(188, 186, 186);
+}
+
+@media (min-width: 960px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid lightgreen;
+        padding: 25px 43px;
+    }
+
+    .pricing-feature-item {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 990px) {
+    .pricing-button {
+        background-color: #399918;
+    }
+}
+
+
